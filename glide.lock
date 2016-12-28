@@ -1,0 +1,8 @@
+hash: 52733d4546bd01ff1ca8c18db4d04869068eb9b17d6590538c3ddaffa0845dfb
+updated: 2016-12-28T08:49:45.255731129-05:00
+imports:
+- name: github.com/bakins/go-zfs
+  version: 13c707182a3c3015b7516d28985d879d67fca763
+- name: github.com/docker/go-units
+  version: f2d77a61e3c169b43402a0a1e84f06daf29b8190
+testImports: []

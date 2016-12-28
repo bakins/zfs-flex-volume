@@ -1,0 +1,6 @@
+package: github.com/bakins/zfs-flex-volume
+import:
+- package: github.com/docker/go-units
+  version: ~0.3.1
+- package: github.com/bakins/go-zfs
+  version: 13c707182a3c3015b7516d28985d879d67fca763
