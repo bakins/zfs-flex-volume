@@ -4,3 +4,5 @@ import:
   version: ~0.3.1
 - package: github.com/bakins/go-zfs
   version: 13c707182a3c3015b7516d28985d879d67fca763
+- package: github.com/pborman/uuid
+  version: ^1.0.0
