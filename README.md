@@ -26,6 +26,9 @@ from a parent dataset and mount them for usage in a container.
 
 Building
 ========
+
+Note: tagged releases are availible at https://github.com/bakins/zfs-flex-volume/releases
+
 You need a go build environment. This has been tested with go 1.7.x - other versions
 may work.
 
