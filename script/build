@@ -1,0 +1,7 @@
+#!/bin/bash
+NAME=zfs-flex-volume
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+PARENT=`dirname ${DIR}`
+
+cd ${PARENT}
+GOOS=linux GOOARCH=amd64 CGO_ENABLE=0 go build -o ${NAME} .

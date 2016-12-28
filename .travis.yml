@@ -1,0 +1,10 @@
+language: go
+
+go:
+  - 1.7.x
+
+notifications:
+  email: false
+
+script:
+  - ./script/build
