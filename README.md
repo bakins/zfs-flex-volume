@@ -98,8 +98,8 @@ but remained mounted under the parent dataset.  zfs-flex-driver, at this time, d
 Note: multiple pods may mount the same dataset on the same host.
 
 The following options may be passed:
-* dataset - **required ** - name of the dataset to create.
-* quota - **required*** - [Quota](https://www.freebsd.org/doc/handbook/zfs-term.html#zfs-term-quota) for the dataset.
+* dataset - **required** - name of the dataset to create.
+* quota - **required** - [Quota](https://www.freebsd.org/doc/handbook/zfs-term.html#zfs-term-quota) for the dataset.
 * reservation - [reservation](https://www.freebsd.org/doc/handbook/zfs-term.html#zfs-term-reservation) for the dataset. By default, none is set.
 * compression - [compression](https://www.freebsd.org/doc/handbook/zfs-term.html#zfs-term-compression). By default no option is set, which means inherit from parent dataset.
 

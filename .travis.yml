@@ -1,13 +1,16 @@
 language: go
-
 go:
-  - 1.7.x
-
+- 1.7.x
 notifications:
   email: false
-
 install:
-  - true
-
+- true
 script:
-  - ./script/build
+- "./script/build"
+deploy:
+  provider: releases
+  api_key:
+    secure: VCpieKNOOZsjb9zGWbGu+WH5z4ezsTpKcnXPR9pZEXgIUzrS13CBb/8Ih/nJnkv1ynHNTSIS9gpC3c/36xXoJGXnHGcy0JJ33eXhNV80Zo+SLXLRUdRBJfIBxl5abQovKlkpiRROk1NbXy6zKsVdmEtl2KxLwilJaVjCAHMBmOc5I0bSLVlTcWga2VxgghsQZOTZcjLbUZ0BObun41f/Qzhb8x6m6iOSQ7JoJIPEgWXWBwq4CfAT18V86y4+SaA6ylDDKCr2DGhMX/vlOJr7ckTsO6NzwJTlnh/+FSNbiDPyV1e9ERahn7SYoYG24M7+wpDKcMxH5IPjPEtDOagzvOu83KjU2iobRrJJ/x4422XNzclUIqAkZUqEbpstMBD5O+ok3FWXetDa5qii+4F27W2gfy3vQHBJyjNR4wOzrjZdzBkcNGDsfEqLSPhKyrIsc9EUwVOYn0UHKPn6TMKD5PfSKTBnQ/5tYjxo++qZkzWrcFuPm2ICADsEQpxLXlQvZow71Xmn0i/oyOwXC2Zyj0Qcq7xZmflWnT1OsMJhLFrGTBHiwn0PGePixUtLLEmARNSpMyfRoDWQ2rbyFvy+ydIr5rhlHHwdvniPvA9Sd2Cw/LYE8u/+ryZmCRCC+Gx2982MzWaaIaKn+Z4DOXYC482FKrOYahWW98M8ea+si/s=
+  file: zfs-flex-volume
+  on:
+    repo: bakins/zfs-flex-volume
