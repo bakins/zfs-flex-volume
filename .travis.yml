@@ -6,5 +6,8 @@ go:
 notifications:
   email: false
 
+install:
+  - true
+
 script:
   - ./script/build
