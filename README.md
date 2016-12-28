@@ -8,7 +8,7 @@ Status
 ======
 
 Highly experimental. Master is probably broken. Do not use on a system that you
-care about the data.
+care about the data.  This is currently just a port of the [lvm driver](https://github.com/kubernetes/kubernetes/blob/master/examples/volumes/flexvolume/lvm) to ZFS and Go. The code is fairly rough.
 
 Linux only.
 
