@@ -58,7 +58,7 @@ func (r result) emit(rc int, message string) {
 func main() {
 	parent := flag.String("parent", "rpool/k8s/volumes", "parent dataset for volumes")
 	flag.Parse()
-	if len(os.Args) == 1 {
+	if len(os.Args) > 1 {
 		usage()
 	}
 
