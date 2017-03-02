@@ -82,7 +82,7 @@ func main() {
 
 func doUnmount(args []string) {
 	r := result{}
-	if len(args) > 1 {
+	if len(args) < 1 {
 		r.emit(-2, "mountpoint is required")
 	}
 	mountpoint := args[0]
