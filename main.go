@@ -58,11 +58,15 @@ func (r result) emit(rc int, message string) {
 func main() {
 	parent := flag.String("parent", "rpool/k8s/volumes", "parent dataset for volumes")
 	flag.Parse()
-	if len(os.Args) > 1 {
+
+	args := flag.Args()
+
+	if len(args) == 0 {
 		usage()
 	}
 
-	_, action, args := os.Args[0], os.Args[1], os.Args[2:]
+	action := args[0]
+	args = args[1:]
 
 	switch action {
 	case "init":
