@@ -116,7 +116,7 @@ func doUnmount(args []string) {
 
 func doMount(args []string) {
 	r := result{}
-	if len(args) > 2 {
+	if len(args) < 2 {
 		r.emit(-2, "device and mountpoint are required")
 	}
 
