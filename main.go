@@ -154,9 +154,13 @@ func doMount(args []string) {
 		r.emit(0, "")
 	}
 
+	if err := os.MkdirAll(mountpoint, 0755); err != nil {
+		r.emit(-3, fmt.Sprintf("failed to create mount point: %v", err))
+	}
+
 	cmd := exec.Command("mount", "-o", "bind", ds.Mountpoint, mountpoint)
-	if _, err := cmd.Output(); err != nil {
-		r.emit(-3, fmt.Sprintf("failed to mount dataset: %v", err))
+	if out, err := cmd.CombinedOutput(); err != nil {
+		r.emit(-3, fmt.Sprintf("failed to mount dataset: %v: %s", err, string(out)))
 	}
 	r.emit(0, "")
 }
