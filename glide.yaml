@@ -6,3 +6,4 @@ import:
   version: 13c707182a3c3015b7516d28985d879d67fca763
 - package: github.com/pborman/uuid
   version: ^1.0.0
+- package: github.com/spf13/cobra
